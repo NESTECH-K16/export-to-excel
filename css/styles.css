@@ -1,0 +1,109 @@
+body {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	gap: 48px;
+	align-items: center;
+	color: #262626;
+	min-height: 100vh;
+}
+
+fieldset {
+	padding: 10vw;
+}
+legend {
+	font-size: 40px;
+	color: violet;
+}
+
+.info .info__teacher {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1rem;
+}
+.info .info__teacher h2 {
+	font-weight: bold;
+	font-size: 34px;
+	color: lightgreen;
+	line-height: 40px;
+}
+
+.form_controls {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.form_controls label {
+	font-size: 20px;
+	line-height: 24px;
+	font-weight: 500;
+}
+.form_controls input {
+	height: 44px;
+	line-height: 44px;
+	border-radius: 8px;
+	padding: 12px;
+}
+
+form {
+	display: flex;
+	gap: 45px;
+	justify-content: space-between;
+	width: 100%;
+}
+
+label[for='choose-file'],
+button {
+	font-size: 20px;
+	line-height: 24px;
+	border: 1px solid #ccc;
+	width: 120px;
+	padding: 12px 32px;
+	border-radius: 8px;
+	cursor: pointer;
+	color: white;
+}
+
+label[for='choose-file'] {
+	background-color: orange;
+}
+
+button {
+	background-color: blueviolet;
+}
+
+.info {
+	/* display: none; */
+}
+
+.open {
+	display: block;
+}
+
+table {
+	border-radius: 8px;
+	border-collapse: separate;
+	border-spacing: 0;
+	border: 1px solid #ccc;
+}
+
+th {
+	padding: 5px 12px;
+	font-size: 14px;
+	color: #282828;
+	border: 1px solid #ccc;
+	border-right: none;
+}
+th:last-child {
+	border: 1px solid #ccc;
+}
+table th:first-child {
+	border-radius: 8px 0 0 0px;
+}
+
+table th:last-child {
+	border-radius: 0 8px 0 0;
+}
+

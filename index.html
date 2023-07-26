@@ -4,22 +4,51 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Summary Fresher Javascript</title>
+		<link rel="stylesheet" href="css/styles.css">
 	</head>
 	<body>
-		<label for="chooseFile">Choose File</label>
-		<input type="file" id="chooseFile" />
-		<button onclick="uploadFile()">Upload</button>
+		<fieldset>
+			<legend>FORM CONVERT EXCEL</legend>
+			<form action="" onsubmit="event.preventDefault();return uploadFile()">
+				<div class="form_controls">
+					<label for="choose-file">
+						Choose File
+					</label>
+					<input type="file" id="choose-file" hidden/>
+				</div>
+				<button >Upload</button>
+			</form>
 
-		<div id="result">
-			<!-- <span>Name</span>
-      <span>Phone</span>
-      <span>Status</span>
-      <span>Total Session</span>
-      <span>Off Time</span> -->
-		</div>
+			<div class="info">
+				<div class="info__teacher">
+					<h2 class="info__teacher-name"></h2>
+					<span class="info__teacher-date"></s>
+				</div>
+			</div>
+		</fieldset>
 
+
+		<table id="info">
+			<thead>
+				<th>Họ và tên</th>
+				<th>Số điện thoại</th>
+				<th>TRẠNG THÁI HỌC </th>
+				<th>TÌNH TRẠNG</th>
+				<th>BUỔI HỌC</th>
+				<th>NGHỈ HỌC</th>
+				<th>NGHỈ TỰ DO</th>
+			</thead>
+			<tbody>
+				
+			</tbody>
+		</table>
+
+		
+	
+		<script src="script/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.5/xlsx.min.js"></script>
-		<script src="script/app.js"></script>
+		<script src="script/header.js" type="module"></script>
+		<script type="module" src="script/app.js"></script>
 	</body>
 </html>
 
